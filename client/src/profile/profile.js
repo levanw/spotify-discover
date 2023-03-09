@@ -6,7 +6,7 @@ class Profile extends React.Component {
 
     constructor(props) {
         super(props);
-    }
+    };
 
     render() {
 
@@ -19,13 +19,13 @@ class Profile extends React.Component {
                         <h1>{this.props.profile.display_name}</h1>
                         <p>{this.props.profile.followers.total} Followers</p>
                         {this.props.profile.images.length && this.props.profile.images[0].url && (
-                            <img src={this.props.profile.images[0].url} alt="Avatar" />
+                            <img src={this.props.profile.images[0].url} alt="Profile Picture" />
                         )}
                     </div>
                 )}
             </>
         )
-    }
-}
+    };
+};
 
 export default Profile;
